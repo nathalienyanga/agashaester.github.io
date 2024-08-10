@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+        <h1>Contact Us</h1>
+    </header>
+<nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <button id="sidebar-toggle">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="profiles.html">Meet Our Team</a>
+        <a href="profile1.html">Sara</a>
+        <a href="profile2.html">Dr Lucy</a>
+        <a href="profile3.html">Ester</a>
+        <a href="https://nathalienyanga.github.io/" target="_blank"> Nathalie </a>
+
+    </div>
+
+    
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Get in Touch</h2>
+                <p>Feel free to reach out to us via the form below or through any of our social media channels.</p>
+                <ul>
+                    <li>Email: contact@example.com</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Address: 123 Main Street, City, Country</li>
+                </ul>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="contact.php" method="post" class="php-email-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Senla Research Group. All rights reserved.</p>
+    </footer>
+     <script>
+        const sidebar = document.getElementById('sidebar');
+        const sidebarToggle = document.getElementById('sidebar-toggle');
+        const content = document.getElementById('content');
+
+        sidebarToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            if (sidebar.classList.contains('open')) {
+                content.style.marginLeft = '220px';
+            } else {
+                content.style.marginLeft = '20px';
+            }
+        });
+    </script>
+</body>
+</html>

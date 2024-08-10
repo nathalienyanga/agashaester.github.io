@@ -1,0 +1,435 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    transition: margin-left 0.3s;
+}
+
+header {
+    background-color: #7393B3;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#7393B3;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #7393B3;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(115, 147, 179, 0.95); /* More solid background */
+    padding-top: 20px;
+    transition: transform 0.3s;
+    transform: translateX(-100%);
+    z-index: 1000; /* Ensures the sidebar is on top of other elements */
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white; /* Ensures text is visible */
+    display: block;
+}
+
+.page-content {
+    margin-left: 20px;
+    padding: 20px;
+    text-align: center; /* Center text within page content */
+}
+
+#sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    background-color:#7393B3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #CCCCFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh; 
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Ensures images are below the sidebar */
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center; /* Center text within content sections */
+}
+
+.core-values {
+    background-color: #f0f0f0; /* Example background color for core values section */
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px; /* Adjust size of social media icons */
+    height: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    background-color: #004d40;
+    color: white;
+    padding: 10px;
+}
+
+.logo-img {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+.logo-text {
+    font-size: 1.5rem; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+}
+
+.header-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #7393B3;
+    color: white;
+    padding: 10px;
+    text-align: center; /* Center text within the container */
+}
+
+.logo-img {
+    height: 50px; /* Adjust height as needed */
+    margin-right: 10px; /* Add space between logo and text */
+}
+
+.logo-text {
+    text-align: center; /* Center text horizontally */
+    font-size: 2rem; /* Adjust font size as needed */
+    margin-top: 20px; /* Example: Adds space above the text */
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.contact-info, .contact-form {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    background-color: #00796b;
+    border-radius: 4px;
+    color: white;
+    margin-right: 10px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    background-color: #004d40;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-group button {
+    background-color: #00796b;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #004d40;
+}
+
+/* Small navigation buttons */
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators li {
+    background-color: #00796b;
+}
+
+.carousel-indicators li.active {
+    background-color: #004d40;
+}
+
+/* Transparent navigation buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    border-radius: 50%;
+    padding: 10px;
+    z-index: 1; /* Ensures buttons are below the sidebar */
+}
+
+/* Bio section */
+.person {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.person-info {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.bio img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.bio-text {
+    flex: 1;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #7393B3;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.download-btn:hover {
+    background-color: #7393B3;
+}
+
+/* Container for image and text */
+.profile-container {
+    display: flex;
+    align-items: flex-start; /* Align items at the start (top) */
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0;
+}
+
+.profile-container img {
+    width: 550px;
+    height: 520px;
+    margin-right: 20px;
+}
+
+.profile-container .text {
+    flex: 1;
+    max-width: 60%; /* Limit maximum width of the text */
+}
+
+.profile-container h1.center-text {
+    text-align: center; /* Center align the h1 */
+    margin-top: 0; /* Remove default margin */
+}
+
+.profile-container h4 {
+    margin-top: 0; /* Remove default margin */
+}
+
+.profile-container p {
+    margin-top: 10px; /* Add spacing between paragraphs */
+    text-align: justify; /* Justify text */
+}
+
+        /* styles.css */
+
+/* Video links section */
+/* Base styles for the video links section */
+.video-container {
+    padding: 20px;
+    background-color: #f0f0f0; /* Example background color */
+    margin-bottom: 60px; /* Ensure space for footer */
+}
+
+.video-links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.video-links ul li {
+    margin-bottom: 10px;
+}
+
+.video-links ul li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    font-size: 16px; /* Example font size */
+}
+
+.video-links ul li a:hover {
+    color: #007bff;
+}
+
+/* Responsive design adjustments */
+@media only screen and (max-width: 768px) {
+    .video-container {
+        padding: 10px;
+        margin-bottom: 40px; /* Adjust margin for smaller screens */
+    }
+
+    .video-links ul li {
+        margin-bottom: 8px;
+    }
+
+    .video-links ul li a {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .video-container {
+        padding: 5px;
+        margin-bottom: 20px; /* Adjust margin for smallest screens */
+    }
+
+    .video-links ul li {
+        margin-bottom: 6px;
+    }
+
+    .video-links ul li a {
+        font-size: 12px;
+    }
+}
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    color: black; /* Black text */
+    font-size: 16px; /* Font size */
+    padding: 10px; /* Padding around the text */
+    position: absolute; /* Position absolutely within carousel item */
+    bottom: 0; /* Align at the bottom */
+    left: 0; /* Align at the left */
+    right: 0; /* Align at the right */
+}
+
+.carousel-caption p {
+    margin-bottom: 0; /* Remove bottom margin from paragraphs */
+}
+
+@media only screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center align items vertically */
+        text-align: center; /* Center align text */
+    }
+
+    .profile-container img {
+        margin-right: 0; /* Remove margin on smaller screens */
+        margin-bottom: 10px; /* Add space below image */
+    }
+
+    .profile-container .text {
+        max-width: 100%; /* Full width for text on smaller screens */
+    }
+}
+.bio-text p {
+    text-align: justify;
+    line-height: 1.6;
+}

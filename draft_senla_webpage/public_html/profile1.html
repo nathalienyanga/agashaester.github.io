@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <button id="sidebar-toggle">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="profiles.html">Meet our Team</a>
+       <a href="profile1.html">Dr. Sarah Nabachwa</a>
+        <a href="profile2.html">Dr. Lucy Rono</a>
+        <a href="profile3.html" >Dr. Ester Agasha</a>
+    <a href="nathalie.html" target="_blank">Nathalie Nyanga</a>
+    </div>
+     <title>Dr. Sarah Nabachwa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: url('https://www.blackstoneranchinstitute.org/wp-content/uploads/2019/12/Sustainable-Smallholder-Agriculture-in-Sub-Saharan-Africa.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #003366; /* Dark blue text color */
+            text-align: left;
+            padding: 20px;
+        }
+        .hero-content {
+            max-width: 60%;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 300px; /* Expanded profile picture size */
+            height: 300px;
+            margin-left: 0; /* Shifted profile picture closer to the left */
+        }
+        .hero h1 {
+            color: white; /* White color for the title */
+            margin-bottom: 20px; /* Spacing below the title */
+        }
+        .hero p {
+            font-size: 1.2em; /* Reduced font size */
+            margin-bottom: 15px; /* Increased space between sentences */
+        }
+        .hero .highlight {
+            color: white; /* White color for highlighted words */
+            margin-bottom: 10px; /* Spacing between highlighted words */
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 30px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+            text-align: left; /* Align text to the left */
+        }
+        .content-section.centered {
+            text-align: center; /* Center text */
+        }
+        .content-section h2 {
+            font-size: 1.8em;
+            color: #003366; /* Dark blue color for heading */
+            margin-bottom: 20px;
+            text-align: center; /* Centered heading */
+        }
+        .content-section p, .content-section ul {
+            text-align: justify; /* Justify text in content sections */
+        }
+        .content-section.centered p, .content-section.centered ul {
+            text-align: center; /* Center text in specific sections */
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section li {
+            margin-bottom: 10px;
+        }
+        .content-section a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+        .images-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .icons {
+            display: flex;
+            justify-content: center; /* Center the icons */
+            gap: 20px; /* Space between icons */
+            margin-top: 20px;
+        }
+        .icons a {
+            color: #003366; /* Dark blue icon color */
+            font-size: 2em; /* Larger icon size */
+            transition: color 0.3s ease; /* Smooth transition for icon color */
+            background-color: #fff; /* White background */
+            border-radius: 50%; /* Round format */
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        .icons a:hover {
+            color: #1a73e8; /* Modern blue color on hover */
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home-section'); // Show the home section by default
+
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute('href').substring(1) + '-section';
+                    showSection(targetId);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Home Section -->
+    <div id="home-section" class="section">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Dr. Sarah Nabachwa</h1>
+                <p class="highlight">Director of Public Relations, SENLA Research Group</p>
+                <p class="highlight">Researcher | Business Cases Enthusiast</p>
+            </div>
+            <img src="https://www.afox.ox.ac.uk/sites/default/files/styles/profile/public/2023-03/passport_photo-sarahnabachwa_photo.jpg?itok=jLGQXWFf" alt="Dr. Sarah Nabachwa">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#research">Research & Publications</a>
+        </nav>
+        <div class="container">
+            <div class="content-section">
+                <h2>Biography</h2>
+                <p>I am lecturer and researcher interested in business and management sciences. I have been a Visiting Fellow at the Said Business School, University of Oxford, as part of the Africa Oxford Visiting Fellowship Programme. I have pursued PhD in Marketing from Mbarara University of Science and Technology (MUST), Uganda, where I am currently working as a lecturer in Marketing in the Faculty of Business and Management Sciences. Also, I am an external examiner at Mountains of the Moon University, Uganda. I am a mentor at the Consortium for Affordable Medical Technologies (CamTech Uganda), MUST Centre for Innovations and Technology Transfer (CITT), and MUST Business Incubation Clinic. I coordinate the Erasmus plus collaboration between MUST and Hochschule Mainz, University of Applied Sciences, German, and a project core member for the UNESCO-China funds in Trust project implemented at MUST. My research focuses on locally contextualised business teaching using case studies to understand ‘Street Smart’ Entrepreneurs. I focus on writing and publishing Business Teaching Case Studies (BTCS) of entrepreneurs who start their businesses with minimal resources and limited education. BTCS of street-smart entrepreneurs can provide valuable insight into indigenous knowledge and business models which are rarely shared or studied in business schools. ‘Street Smart’ Entrepreneurs are a part of the business and innovation landscape that is often marginalised and whose ingenuity has been overlooked. My work has the potential to bring to light how ‘street smart’ entrepreneurs have often provided impactful local solutions to society’s challenges. While at Oxford, I worked on developing locally contextualised Business Teaching Case Studies that will reflect the challenges local entrepreneurs face. My project explored how creating local BTCS could increase insights into the experiences of ‘street smart’ entrepreneurs and their business performance considering profitability, efficiency, diversification, growth, human resource dynamics, and survival strategies over the years.</p>
+            </div>
+            <div class="content-section centered">
+                <h2>Professional Background</h2>
+                <ul>
+                    <li>2023 Network of Impact Evaluation Researchers in Africa (NIERA)</li>
+                    <li>2021 Non-Residential Fellow, CEGA at UC Berkeley</li>
+                    <li>2018 DAAD in-country/in-region Ph.D. Fellowship</li>
+                <h2>Educational Background</h2>
+                <ul>
+                    <li>Ph.D. in Marketing, Mbarara University of Science and Technology</li>
+                    <li>MSc. in Business Administration, Makerere University</li>
+                    <li>Bachelor of Commerce, Makerere University</li>
+                </ul>
+                <h2>Contacts</h2>
+                <div class="icons">
+                    <a href="mailto:snabachwa@must.ac.ug"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:+256787083553"><i class="fa fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research & Publications Section -->
+    <div id="research-section" class="section" style="display: none;">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Dr. Sarah Nabachwa</h1>
+                <p class="highlight">Director of Operations, SENLA Research Group</p>
+                <p class="highlight">Researcher | Social Scientist | Educator</p>
+            </div>
+            <img src="https://media.licdn.com/dms/image/D4D03AQFb4yY6zvlx-Q/profile-displayphoto-shrink_800_800/0/1679061482623?e=2147483647&v=beta&t=VL1UGh1bOmGmLVSwjP_m8QEd0_7xGZ3b5A9VdzS9-9E" alt="Dr. Sarah Nabachwa">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#research">Research & Publications</a>
+        </nav>
+        <div class="container content-section">
+            <h3>Published Articles</h3>
+            <ul>
+                <li>Nabachwa, S., Kamukama, N., Owino, J.O., Nsambu, K.F. (2019), Information Asymmetry: Mediator between Promotions and Usage of Traditional Medicine in Central Uganda. British Journal of Marketing Studies, Vol. 7, No. 3, pp.73-86.</li>
+                <li>Porath, D., Nabachwa, S., Agasha, E., Nsambu, K.F. (2021), Innovation and Employment in Sub-Saharan Africa. University of Applied Sciences Mainz, Mainz UASM Discussion Paper Series No. 10/2021. <a href="https://www.econstor.eu/handle/10419/235646" target="_blank">https://www.econstor.eu/handle/10419/235646</a></li>
+                <li>Nabachwa, S., Kamukama, N., Nsambu, K.F. (2019), Promotions and Consumer Attitudes towards Traditional Medicine Usage in Central Uganda. British Journal of Marketing Studies, Vol. 7, No 5, pp.41-56.</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="footer">
+        <p>&copy; 2024 SENLA Research Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('sidebar-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

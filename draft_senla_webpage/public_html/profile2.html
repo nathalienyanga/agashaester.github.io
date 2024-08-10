@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <button id="sidebar-toggle">☰</button>
+    <div class="sidebar" id="sidebar">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="profiles.html">Meet Our Team</a>
+       <a href="profile1.html">Dr. Sarah Nabachwa</a>
+        <a href="profile2.html">Dr. Lucy Rono</a>
+        <a href="profile3.html" >Dr. Ester Agasha</a>
+        <a href="nathalie.html" target="_blank">Nathalie Nyanga</a>
+
+    </div>
+    <title>Lucy Jepchoge Rono (Professor)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: url('https://elephantgrass.nl/wp-content/uploads/2020/05/Watamu-Bay-Kenya-by-Yuri-Yabi-DJI_0047-1-scaled.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #003366; /* Dark blue text color */
+            text-align: left;
+            padding: 20px;
+        }
+        .hero-content {
+            max-width: 60%;
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 300px; /* Expanded profile picture size */
+            height: 300px;
+            margin-left: 0; /* Shifted profile picture closer to the left */
+        }
+        .hero h1 {
+            color: white; /* White color for the title */
+            margin-bottom: 20px; /* Spacing below the title */
+        }
+        .hero p {
+            font-size: 1.2em; /* Reduced font size */
+            margin-bottom: 15px; /* Increased space between sentences */
+        }
+        .hero .highlight {
+            color: white; /* White color for highlighted words */
+            margin-bottom: 10px; /* Spacing between highlighted words */
+        }
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav a {
+            color: #003366;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 30px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+            text-align: left; /* Align text to the left */
+        }
+        .content-section.centered {
+            text-align: center; /* Center text */
+        }
+        .content-section h2 {
+            font-size: 1.8em;
+            color: #003366; /* Dark blue color for heading */
+            margin-bottom: 20px;
+            text-align: center; /* Centered heading */
+        }
+        .content-section p, .content-section ul {
+            text-align: justify; /* Justify text in content sections */
+        }
+        .content-section.centered p, .content-section.centered ul {
+            text-align: center; /* Center text in specific sections */
+        }
+        .content-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .content-section li {
+            margin-bottom: 10px;
+        }
+        .content-section a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+        .images-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .icons {
+            display: flex;
+            justify-content: center; /* Center the icons */
+            gap: 20px; /* Space between icons */
+            margin-top: 20px;
+        }
+        .icons a {
+            color: #003366; /* Dark blue icon color */
+            font-size: 2em; /* Larger icon size */
+            transition: color 0.3s ease; /* Smooth transition for icon color */
+            background-color: #fff; /* White background */
+            border-radius: 50%; /* Round format */
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        .icons a:hover {
+            color: #1a73e8; /* Modern blue color on hover */
+        }
+    </style>
+    <script>
+        
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('.section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('home-section'); // Show the home section by default
+
+            var navLinks = document.querySelectorAll('nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var targetId = this.getAttribute('href').substring(1) + '-section';
+                    showSection(targetId);
+                });
+            });
+        });
+    </script>
+
+    <!-- Home Section -->
+    <div id="home-section" class="section">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Lucy Jepchoge Rono(Professor)</h1>
+                <p class="highlight">Director of Finance, SENLA Research Group</p>
+                <p class="highlight">Researcher | Development Economist</p>
+            </div>
+            <img src="images/drlucy_headshot.jpg" alt="Dr. Lucy Jepchoge Rono">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#research">Research & Publications</a>
+        </nav>
+        <div class="container">
+            <div class="content-section">
+                <h2>Biography</h2>
+                <p>Dr. Lucy Jepchoge Rono holds a PhD in Finance from Moi University, she is an associate professor in the Department of Accounting and Finance, School of Business and Economics at Moi University. She has been teaching and researching in the department for a span of 15 years. Her research focus is on savings, retirement, and investment management. She has served in leadership positions including chair of the department, Associate Dean, as well as Dean of the Business School of Moi University between 2014-2017. She is a member of the Kenya Institute of Management.</p>
+            </div>
+            <div class="content-section centered">
+                <h2>Professional Background</h2>
+                <ul>
+                    <li>2023 Network of Impact Evaluation Researchers in Africa (NIERA)</li>
+                    <li>2021 Non-Residential Fellow, CEGA at UC Berkeley</li>
+                    <li>2018 DAAD in-country/in-region Ph.D. Fellowship</li>
+                </ul>
+                <h2>Educational Background</h2>
+                <ul>
+                    <li>Ph.D. in Finance, Moi University</li>
+                    <li>MSc. in International and Development Economics, University of San Francisco</li>
+                    <li>MSc. in Finance and Investment, Makerere University</li>
+                    <li>Bachelor's in Business Administration, Makerere University</li>
+                </ul>
+                <h2>Contacts</h2>
+                <div class="icons">
+                    <a href="mailto:agashaester660@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="tel:+14155256036"><i class="fa fa-phone"></i></a>
+                    <a href="https://www.linkedin.com/in/ester-agasha-b095751ba/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research & Publications Section -->
+    <div id="research-section" class="section" style="display: none;">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Professor, Lucy Jepchoge Rono</h1>
+                <p class="highlight">President, SENLA Research Group</p>
+                <p class="highlight">Researcher | Development Economist</p>
+            </div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkOxG-FyFcFj_eZ6pcQb_6oB8UvcYHbPmv8cGnLum-UE2UFLhMDq9pw-SRcQ&s" alt="Dr. Lucy Jepchoge Rono">
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#research">Research & Publications</a>
+        </nav>
+        <div class="container content-section">
+            <h3>Book Chapters</h3>
+            <ul>
+                <li>Rono, L. J., & Agasha, E. (2020). Psychological Determinants of Employees' Intentions to Retire: A Case of Public Universities in Kenya. In A Multidimensional Economic Assessment of Africa (pp. 181-198). Springer, Singapore.</li>
+                <li>Agasha. E., Bakunda. B., & Rono, L. J. (2018). Financial Literacy, Financial attitude and Savings Behavior of Youth in Uganda: In Defining the Frontiers of Global Business Research across Emerging Countries (pp. 155-174). McGraw Hill Education, India.</li>
+            </ul>
+            <h3>Published Articles</h3>
+            <ul>
+                <li>Rono, L. J., Agasha, E., & Lagat, C. K. (2021). An assessment of employees' intention to retire in Kenya. Journal for Global Business Advancement, 14(1), 46-69.</li>
+                <li>Agasha, E., Rono, L. J., & Nkote, I. N. (2020). Is Financial Inclusion Effective in Eradicating Poverty? The Journal of Development Practice, 6.</li>
+                <li>Agasha, E., Monametsi, G., & Feela, T. (2020). Loan Portfolio Quality of Microfinance Institutions in Uganda: A Qualitative Assessment. Journal of Financial Risk Management, 9(02), 155.</li>
+                <li>Monametsi, G., Rono, L., and Agasha, E. (2020). Audit Quality and Firm Performance in Botswana, Kenya and Uganda. Open Journal of Accounting. ISSN 2222-1905(Paper), ISSN 2222-2839 (Online) Vol.10, Issue No.24.</li>
+                <li>Agasha. E., Kamukama. N., Sserwanga. A., (2021). The mediating role of cost of capital in Uganda's Microfinance Institutions. African Journal of Economic and Management Studies (AJEMS).</li>
+                <li>Agasha. E., Frankwick. G. L., Kamukama. N., Sserwanga. A., (2021). The moderating role of employee work experience on the relationship between credit risk assessment and loan performance: A survey of Microfinance institutions in Uganda. Journal of Global Business Advancement.</li>
+            </ul>
+            <h3>Working Papers</h3>
+            <ul>
+                <li>Porath. D., Nabachwa. S., Agasha., Kijjambu. F., (2021). Innovation and Employment in Sub-Saharan Africa. In: UASM Discussion Paper Series No. 11, University of Applied Sciences Mainz/Germany.</li>
+            </ul>
+            <h3>Unpublished Research</h3>
+            <ul>
+                <li>Agasha, E., & Wydick, B. Financial Literacy and Aspirations: A Pilot Experiment from Eastern Uganda.</li>
+            </ul>
+        </div>
+    </div>
+      
+    <footer class="footer">
+        <p>&copy; 2024 SENLA Research Group. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('sidebar-toggle').addEventListener('click', function() {
+            document.getElementById('sidebar').classList.toggle('open');
+        });
+    </script>
+</body>
+</html>

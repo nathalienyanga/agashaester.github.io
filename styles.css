@@ -564,4 +564,55 @@ footer {
         padding: 5px; /* Reduce padding */
     }
 }
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(115, 147, 179, 0.95); /* More solid background */
+    padding-top: 20px;
+    transition: transform 0.3s;
+    transform: translateX(-200px); /* Start hidden */
+    z-index: 1000; /* Ensures the sidebar is on top of other elements */
+}
+
+.sidebar.open {
+    transform: translateX(0); /* Show sidebar */
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white; /* Ensures text is visible */
+    display: block;
+}
+
+/* Sidebar Toggle Button */
+#sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1001; /* Ensure toggle button is on top of the sidebar */
+    background-color: #7393B3;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        width: 80%; /* Adjust sidebar width for smaller screens */
+        transform: translateX(-100%); /* Hide sidebar by default */
+    }
+
+    .sidebar.open {
+        transform: translateX(0); /* Show sidebar */
+    }
+}
 

@@ -500,8 +500,55 @@ footer {
     }
 }
 
-/* Additional adjustments for ultra-small screens (phones) */
+/* Mobile Devices (Portrait) */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+    .sidebar {
+        width: 100%; /* Full width for sidebar on mobile devices */
+        transform: translateX(0); /* Ensure sidebar is visible */
+    }
+
+    .page-content {
+        padding: 10px; /* Adjust padding for portrait mode */
+        margin: 0 auto; /* Center content */
+        width: 95%; /* Maximize content width */
+    }
+
+    #sidebar-toggle {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        z-index: 1000;
+    }
+}
+
+/* Mobile Devices (Landscape) */
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    .sidebar {
+        width: 80%; /* Adjust sidebar width for landscape view */
+        transform: translateX(-100%); /* Hide sidebar by default */
+    }
+
+    .profile-container {
+        flex-direction: row; /* Horizontal arrangement on landscape */
+        align-items: flex-start; /* Align items to the top */
+        text-align: left; /* Left-align text */
+        justify-content: space-between; /* Space items evenly */
+    }
+
+    .page-content {
+        padding: 15px; /* Adjust padding for landscape mode */
+        margin: 0 auto; /* Center content */
+        width: 90%; /* Maximize content width */
+    }
+}
+
+/* Additional Adjustments for Ultra-small Screens (Phones) */
 @media only screen and (max-width: 480px) {
+    .sidebar {
+        width: 100%; /* Full width sidebar */
+        transform: translateX(0); /* Ensure visibility when open */
+    }
+
     .profile-container img {
         width: 100%; /* Full width for very small screens */
         margin-right: 0; /* No margin on the right */
@@ -512,12 +559,9 @@ footer {
         width: 100%; /* Full width text */
     }
 
-    .sidebar {
-        width: 100%; /* Full width sidebar */
-    }
-
     .page-content {
         width: 100%; /* Full width content */
         padding: 5px; /* Reduce padding */
     }
 }
+

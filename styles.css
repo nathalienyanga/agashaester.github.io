@@ -742,5 +742,70 @@ body {
         width: 20px;
     }
 }
+/* Global spacing */
+body, .page-content, .content-section, .bio, .profile-container, .video-container {
+    padding: 15px;
+    margin: 15px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Adjusting margins for specific sections */
+.content-section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.profile-container, .bio {
+    margin-bottom: 30px; /* Additional space around profiles */
+}
+
+/* Responsive layout for content sections */
+@media only screen and (max-width: 768px) {
+    .content-section, .bio, .profile-container, .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-container img, .bio img {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .profile-container .text, .bio-text {
+        max-width: 100%;
+    }
+}
+
+/* Consistent text styling */
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+p, li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    line-height: 1.4;
+}
+
+/* Adjust sidebar and navigation for small screens */
+@media only screen and (max-width: 768px) {
+    nav a, .sidebar a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #sidebar-toggle {
+        padding: 8px 12px;
+    }
+}
 
 

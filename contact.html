@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>ASRA - Research with Impact</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>Contact Us</h1>
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo_2.jpg" alt="Senla Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="th.html">About Us</a></li>
+                    <li><a href="service.html" class="active">Services</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+   
+                    <li><a href="contact.html">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-    </nav>
-    
-    <button id="sidebar-toggle">☰</button>
-    <div class="sidebar" id="sidebar">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="profiles.html">Meet Our Team</a>
-        <a href="https://sarahnabachwa.org">Dr. Sarah Nabachwa</a>
-        <a href="profile2.html">Dr. Lucy Rono</a>
-        <a href="https://esteragasha.com" >Dr. Ester Agasha</a>
-        <a href="https://www.nathalienyanga.com">Nathalie Nyanga</a>
-    </div>
-
+    <!-- Main Section -->
+    <body class="contact-page">
+   
     <main>
         <div class="contact-container">
             <div class="contact-info">
                 <h2>Get in Touch</h2>
-                <p>Feel free to reach out to us via the form below.</p>
+                <p>Feel free to reach out to us via the form below or through any of our social media channels.</p>
                 <ul>
-                    <li>Email: info@senlaresearchhub.com</li>
-                    <li>Phone: (415) 525-6038</li>
-                    <li>Address: Rwebishuri, Mbarara, Uganda</li>
+                    <h4>Contact & Address</h4>
+            <p>+256 787 083553</p>
+            <p><a href="mailto: info@senlaresearchhub.com"></a></p>
+            <p>Address: Rwebishuri, Mbarara, Uganda</p>
                 </ul>
+                <div class="social-media">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                </div>
             </div>
             <div class="contact-form">
-                <!-- Formspree Form -->
-                <form action="https://formspree.io/f/movaykyv" method="POST">
+                <form action="contact.php" method="post" class="php-email-form">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" name="name" id="name" required>
@@ -67,25 +70,45 @@
             </div>
         </div>
     </main>
-    
-    <footer>
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
-    </footer>
-
-    <script>
-        const sidebar = document.getElementById('sidebar');
-        const sidebarToggle = document.getElementById('sidebar-toggle');
-
-        sidebarToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-            if (sidebar.classList.contains('open')) {
-                document.body.style.marginLeft = '220px'; // Adjust body margin to accommodate sidebar
-            } else {
-                document.body.style.marginLeft = '0'; // Reset margin when sidebar is closed
-            }
-        });
-    </script>
-</body>
-</html>
-
-
+     
+        
+         <!-- Footer -->
+      <footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h4>Main Links</h4>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#">Research</a></li>
+                <li><a href="#">Consultancy</a></li>
+                <li><a href="#">Community Engagement</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h4>Contact & Address</h4>
+            <p>+256 787 083553</p>
+            <p><a href="mailto: info@senlaresearchhub.com"></a></p>
+            <p>Address: Rwebishuri, Mbarara, Uganda</p>
+        </div>
+        <div class="footer-column logo-social">
+            <img src="images/logo_2.jpg" alt="ASRA Logo">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2021 - SENLA Research Hub</p>
+    </div>
+</footer>

@@ -217,7 +217,7 @@ footer {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 70vh; /* Adjust height as needed */
+    height: 100vh; /* Adjust height to fit the entire screen */
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -228,14 +228,13 @@ footer {
 
 /* Single Image Styling */
 .hero-image {
-    width: 110%; /* Make the image slightly smaller */
-    height: 90%; /* Adjust the height relative to its container */
+    width: 100%; /* Make the image stretch to full width */
+    height: 100%; /* Make the image stretch to full height */
     background-image: url('./images/New web pic.jpg'); /* Replace with your image */
     background-size: cover; /* Ensures the image scales without distortion */
     background-position: center;
-    border-radius: 10px; /* Optional rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for a polished look */
 }
+
 .about-text {
     background-color: #f9f9f9; /* Light background for contrast */
     padding: 40px 20px;

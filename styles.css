@@ -58,7 +58,7 @@ header nav ul li a:hover {
 
 .hero-overlay {
     background: rgba(0, 0, 0, 0.5);
-    height: 70%;
+    height: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,14 +217,14 @@ footer {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 60vh; /* Adjusted height for a balanced look */
+    height: 60vh; /* Balanced height for a professional look */
     width: 100%; /* Full width of the viewport */
     overflow: hidden; /* Prevent content overflow */
     display: flex;
     align-items: center; /* Vertically center content */
     justify-content: center; /* Horizontally center content */
-    background: url('hero-bg.jpg') no-repeat center center/cover; /* Ensure the image scales proportionally */
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Adds angled corners to the bottom */
+    background: url('./images/New_web_pic.jpg') no-repeat center center/cover; /* Ensure image scales proportionally */
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /* Adds angled corners at the bottom */
 }
 
 /* Hero Overlay */
@@ -232,27 +232,32 @@ footer {
     background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for better text visibility */
     height: 100%; /* Full height of the hero section */
     width: 100%; /* Full width */
-    display: flex;
-    align-items: center; /* Center content vertically */
-    justify-content: center; /* Center content horizontally */
+    position: absolute; /* Ensure it sits over the hero background */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the overlay is above the background */
+}
+
+/* Hero Text */
+.hero-text {
+    position: relative;
+    z-index: 2; /* Ensure text appears above the overlay */
     text-align: center;
     color: white; /* White text for high contrast */
 }
 
-/* Hero Text */
 .hero-text h1 {
-    font-size: 2.8rem; /* Balanced font size for large headers */
+    font-size: 3rem; /* Balanced font size for large headers */
     margin-bottom: 15px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Text shadow for readability over the background */
 }
 
 .hero-text p {
-    font-size: 1.4rem; /* Slightly larger font for subtitle */
+    font-size: 1.4rem; /* Slightly larger font for subtitles */
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8); /* Ensure text is visible */
     max-width: 800px; /* Limit text width for better alignment */
     margin: 0 auto; /* Center the text block */
 }
-
 .container {
     max-width: 800px;
     margin: 0 auto;

@@ -228,7 +228,7 @@ footer {
 
 /* Single Image Styling */
 .hero-image {
-    width: 75%; /* Make the image slightly smaller */
+    width: 90%; /* Make the image slightly smaller */
     height: 90%; /* Adjust the height relative to its container */
     background-image: url('./images/Website picture .jpg'); /* Replace with your image */
     background-size: cover; /* Ensures the image scales without distortion */

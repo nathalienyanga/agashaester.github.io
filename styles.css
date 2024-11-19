@@ -58,7 +58,7 @@ header nav ul li a:hover {
 
 .hero-overlay {
     background: rgba(0, 0, 0, 0.5);
-    height: 120%;
+    height: 70%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,8 +217,8 @@ footer {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh; /* Adjust height as needed */
-    width: 80%;
+    height: 70vh; /* Adjust height as needed */
+    width: 70%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -230,7 +230,7 @@ footer {
 .hero-image {
     width: 90%; /* Make the image slightly smaller */
     height: 90%; /* Adjust the height relative to its container */
-    background-image: url('./images/Website picture .jpg'); /* Replace with your image */
+    background-image: url('./images/New web pic.jpg'); /* Replace with your image */
     background-size: cover; /* Ensures the image scales without distortion */
     background-position: center;
     border-radius: 10px; /* Optional rounded corners */

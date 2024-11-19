@@ -217,42 +217,43 @@ footer {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 80vh; /* Adjust height to fit the entire screen */
-    width: 100%;
-    overflow: hidden;
+    height: 75vh; /* Adjusted height for a professional look */
+    width: 100%; /* Ensure full-width layout */
+    overflow: hidden; /* Prevent overflow issues */
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4f4; /* Optional background color */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background-color: #f4f4f4; /* Background color for fallback */
 }
 
-/* Single Image Styling */
+/* Hero Image Styling */
 .hero-image {
-    width: 100%; /* Make the image stretch to full width */
-    height: 100%; /* Make the image stretch to full height */
-    background-image: url('./images/New web pic.jpg'); /* Replace with your image */
-    background-size: cover; /* Ensures the image scales without distortion */
-    background-position: center;
+    width: 100%; /* Ensure the image stretches fully across the width */
+    height: 100%; /* Fill the container height */
+    background-image: url('./images/New web pic.jpg'); /* Ensure correct image path */
+    background-size: cover; /* Scale the image proportionally */
+    background-position: center; /* Focus on the image center */
+    border-radius: 10px; /* Add slight rounding for polish */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
-.about-text {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 40px 20px;
-}
-
-.about-text h2 {
+/* Text within the Hero Section */
+.hero-text {
+    position: absolute;
+    z-index: 2;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #333;
+    color: #fff; /* Ensure text is readable against the image */
 }
 
-.about-text p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: justify; /* Ensures the text is evenly aligned */
+.hero-text h1 {
+    font-size: 3rem; /* Slightly larger font for emphasis */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for visibility */
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow for visibility */
 }
 
 .container {

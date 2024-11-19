@@ -228,9 +228,9 @@ footer {
 
 /* Single Image Styling */
 .hero-image {
-    width: 90%; /* Make the image slightly smaller */
-    height: 90%; /* Adjust the height relative to its container */
-    background-image: url('./images/Website picture .jpg'); /* Replace with your image */
+    width: 100%; /* Make the image slightly smaller */
+    height: 100%; /* Adjust the height relative to its container */
+    background-image: url('./images/Website pic.jpg'); /* Replace with your image */
     background-size: cover; /* Ensures the image scales without distortion */
     background-position: center;
     border-radius: 10px; /* Optional rounded corners */

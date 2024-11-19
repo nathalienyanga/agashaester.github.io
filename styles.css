@@ -218,7 +218,7 @@ footer {
 .hero {
     position: relative;
     height: 70vh; /* Adjust height as needed */
-    width: 70%;
+    width: 100%;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -228,7 +228,7 @@ footer {
 
 /* Single Image Styling */
 .hero-image {
-    width: 90%; /* Make the image slightly smaller */
+    width: 110%; /* Make the image slightly smaller */
     height: 90%; /* Adjust the height relative to its container */
     background-image: url('./images/New web pic.jpg'); /* Replace with your image */
     background-size: cover; /* Ensures the image scales without distortion */

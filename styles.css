@@ -217,7 +217,7 @@ footer {
 /* Hero Section */
 .hero {
     position: relative;
-    height: 70vh; /* Adjust height as needed */
+    height: 100vh; /* Adjust height as needed */
     width: 100%;
     overflow: hidden;
     display: flex;
